@@ -31,6 +31,12 @@ trait MergesConfigurationObjects
         $values = $a;
 
         foreach ($b as $key => $value) {
+            if (! array_key_exists($key, $values)) {
+                $values[$key] = $value;
+
+                continue;
+            }
+
             if ($this->isAssociative($values[$key]) && $this->isAssociative($value)) {
                 $values[$key] = $this->mergeConfigurationObjects($values[$key], $value, $strategy);
 

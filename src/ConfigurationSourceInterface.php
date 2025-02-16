@@ -20,6 +20,7 @@ interface ConfigurationSourceInterface
      * Provide configuration values.
      *
      * @return array Configuration values.
+     * @throws \N7e\Configuration\ConfigurationSourceExceptionInterface
      */
     public function load(): array;
 }
