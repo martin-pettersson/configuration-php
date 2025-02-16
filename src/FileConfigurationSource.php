@@ -21,7 +21,7 @@ abstract class FileConfigurationSource implements ConfigurationSourceInterface
      *
      * @var string
      */
-    private string $file;
+    protected string $file;
 
     /**
      * Create a new configuration source instance.
