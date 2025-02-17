@@ -19,15 +19,15 @@ class MergeStrategy
     /**
      * Combine all array entries.
      */
-    public const MERGE_ARRAYS = 1;
+    public const int MERGE_ARRAYS = 1;
 
     /**
      * Combine array entries filtering out duplicates.
      */
-    public const MERGE_ARRAYS_UNIQUE = 2;
+    public const int MERGE_ARRAYS_UNIQUE = 2;
 
     /**
      * Replace arrays at key paths using the last array.
      */
-    public const REPLACE_ARRAYS = 3;
+    public const int REPLACE_ARRAYS = 3;
 }

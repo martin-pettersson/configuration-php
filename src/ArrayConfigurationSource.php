@@ -16,7 +16,7 @@ namespace N7e\Configuration;
  *
  * @see \N7e\Configuration\ConfigurationSourceInterface
  */
-class ArrayConfigurationSource implements ConfigurationSourceInterface
+readonly class ArrayConfigurationSource implements ConfigurationSourceInterface
 {
     /**
      * Configuration source content.

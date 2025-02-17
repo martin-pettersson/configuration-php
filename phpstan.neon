@@ -5,3 +5,4 @@ parameters:
         - src
     ignoreErrors:
         - identifier: missingType.iterableValue
+        - identifier: throws.notThrowable

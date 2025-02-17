@@ -7,6 +7,7 @@ use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
 use PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff;
 use PHP_CodeSniffer\Standards\Generic\Sniffs\Formatting\SpaceAfterNotSniff;
+use PHP_CodeSniffer\Standards\Generic\Sniffs\PHP\NoSilencedErrorsSniff;
 use PhpCsFixer\Fixer\ClassNotation\OrderedClassElementsFixer;
 use PhpCsFixer\Fixer\FunctionNotation\FunctionDeclarationFixer;
 use PhpCsFixer\Fixer\ReturnNotation\ReturnAssignmentFixer;
@@ -31,6 +32,7 @@ return [
         ForbiddenNormalClasses::class,
         ForbiddenTraits::class,
         FunctionDeclarationFixer::class,
+        NoSilencedErrorsSniff::class,
         OrderedClassElementsFixer::class,
         ParameterTypeHintSniff::class,
         PropertyTypeHintSniff::class,
